@@ -16,7 +16,9 @@ Once these model were developed, use the May 2019 hourly data of temperatures at
 The ipython notebooks in this repo show illustrate the the exploration and modelling, and the python scripts are used to automate the model building, and the actual prediction, for a given uuid and setpoint.
 
 # Usage
-    download the repo and run "python predict --uuid <uuid number> and --setpoint <setpoint>"
+ download the repo and run:
+ 
+        python predict --uuid <uuid number> and --setpoint <setpoint>
 
 # Assumptions/ Decisions:
 1. Model can have 2 coupled parts: predicting compressor being on durations, and and predicting door open lengths
