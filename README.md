@@ -8,8 +8,10 @@ Fridge's energy consumption is directly proportional to the time the compressor 
 Based on early impressions of the data (constrained by the time limit of 6 hours), it was decided to model the length of the time the compressor is on, based on 
 1. the difference in temperatures inside the fridge when the door is opened and the temperature in the room (the latter was found to be the same as the user-defined setpoint, in most cases)
 2. the length of time the door was open
+This was unique for each device, but there could be a better fit if all of the data from each device were concatenated together
 
-This model would be coupled by another model which predicts the door open length at a given hour of the day.  
+This model would be coupled by another model which predicts the door open length at a given hour of the day. This model was a probability distribution for the length of the door window at different times of the day - lunch time, dinner time, other time - for each device. This would be multiplied by a corresponding weight for the hour (for eg., the probability of door opening, for any length of time, at 1am is significantly lower than at 8pm or 2pm).
+
 
 Once these model were developed, use the May 2019 hourly data of temperatures at LGA (https://www.ncdc.noaa.gov/cdo-web/datasets#NORMAL_HLY) in New York (it is assumed that the fridge is in New York, and that room temperature is equal to the outside temperature). 
 
