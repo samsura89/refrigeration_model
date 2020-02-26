@@ -13,3 +13,16 @@ This model would be coupled by another model which predicts the door open length
 Once these model were developed, use the May 2019 hourly data of temperatures at LGA (https://www.ncdc.noaa.gov/cdo-web/datasets#NORMAL_HLY) in New York (it is assumed that the fridge is in New York, and that room temperature is equal to the outside temperature). 
 
 The ipython notebooks in this repo show illustrate the the exploration and modelling, and the python scripts are used to automate the model building, and the actual prediction, for a given uuid and setpoint.
+
+
+Assumptions/ Decisions:
+1. Model can have 2 coupled parts: predicting compressor being on durations, and and predicting door open lengths
+2. Each device is owned by different individual, who have their own model of keeping the door open, thereby, 
+
+
+Shortcomings/ Scope for improvement:
+1. Fully automate the training pipeline - I was only able to automate the compressor-turned-on durations given door opening lengths and temperature differences, while I individually trained the probability durations for each uuid's door open length
+
+2. Investigate LSTM for better time-series prediction 
+
+3. Use facebook's prophet package for timeseries prediction
