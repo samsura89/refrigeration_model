@@ -30,8 +30,11 @@ The ipython notebooks in this repo show illustrate the the exploration and model
 # Shortcomings/ Scope for improvement:
 1. Fully automate the training pipeline - I was only able to automate the compressor-turned-on durations given door opening lengths and temperature differences, while I individually trained the probability durations for each uuid's door open length
 
-2. Investigate LSTM for better time-series prediction 
+2. The model was overfitted for one of the uuid, and did not transfer well across the others. Predictions could not be obtained for one of the uuid. The energy predictions were off, because the doors could be modelled much much better, and the compressor model was overfitted (in the time constraints, I could manage to only analyze the uuid "09ac4a10-7e8e-40f3-a327-1f93a5cf2383")
 
-3. Use facebook's prophet package for timeseries prediction
+3. Investigate LSTM for better time-series prediction 
 
-4. The energy predictions were off, because the doors could be modelled much much better, and the compressor model was overfitted (in the time constraints, I could manage to only analyze the uuid "09ac4a10-7e8e-40f3-a327-1f93a5cf2383")
+4. Use facebook's prophet package for timeseries prediction
+
+5. A few more hours would have ensured better results, because the whole pipeline is kind of in place. 
+
