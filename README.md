@@ -33,3 +33,5 @@ The ipython notebooks in this repo show illustrate the the exploration and model
 2. Investigate LSTM for better time-series prediction 
 
 3. Use facebook's prophet package for timeseries prediction
+
+4. The energy predictions were off, because the doors could be modelled much much better, and the compressor model was overfitted (in the time constraints, I could manage to only analyze the uuid "09ac4a10-7e8e-40f3-a327-1f93a5cf2383")
