@@ -36,5 +36,8 @@ The ipython notebooks in this repo show illustrate the the exploration and model
 
 4. Use facebook's prophet package for timeseries prediction
 
-5. A few more hours would have ensured better results, because the whole pipeline is kind of in place. 
+5. A few more hours would have ensured better results, because the whole pipeline is kind of in place, and refining the overall predictions would be easier. 
+
+6. Saved the device specific information more efficiently.
+
 
